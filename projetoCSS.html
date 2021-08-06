@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="proj.css">
+    <title>Victória Trindade</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="VTLogo.png" alt="Logo VicTrindade">
+        </div>
+        <ul>
+            <li> <a href="https://www.linkedin.com/in/victoria-maller/"> LinkedIn</a></li>
+            <li> <a href="https://github.com/vicmaller"> GitHub </a></li>
+            <li> <a href="mailto:victoriamaller@live.com"> Email</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Vic Maller</h1>
+                <h5>Estudante de Front-End Dev</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+                
+            <div style="display: none;" id="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat obcaecati facere officiis, quibusdam ea tenetur.
+                        Ipsum est aliquid ad, officia quibusdam laudantium sequi nisi sed!
+                    </p>
+                </div>
+
+            <div class="form">
+                <div>
+                    <p> Deixe seu contato :)</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button> Enviar</button>
+                </form>
+
+            </div>
+            
+        </section>
+    </main>
+
+     <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+    
+</body>
+
+</html>
